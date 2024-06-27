@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout
+
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:background="@drawable/pagebkg"
+    tools:context=".Travel_Mode">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="30dp"
+        app:cardCornerRadius="30dp"
+        app:cardElevation="20dp">
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_gravity="center_horizontal"
+                android:padding="24dp"
+                android:background="@drawable/custom_edittext">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="JOURNEY DETAILS"
+                    android:textAlignment="center"
+                    android:textColor="@color/lavender"
+                    android:textSize="36sp"
+                    android:textStyle="bold" />
+
+                <Switch
+                    android:id="@+id/TMswitch1"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_marginTop="20dp"
+                    android:background="@drawable/custom_edittext"
+                    android:drawableLeft="@drawable/baseline_privacy_tip_24"
+                    android:drawablePadding="8dp"
+                    android:padding="8dp"
+                    android:text="Make me Anonymous"
+                    android:textColor="@color/black"
+                    android:textSize="18dp"
+                    />
+
+
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:id="@+id/TMJFROM"
+                    android:background="@drawable/custom_edittext"
+                    android:layout_marginTop="20dp"
+                    android:padding="8dp"
+                    android:hint="Journey From"
+                    android:drawableLeft="@drawable/baseline_person_24"
+                    android:drawablePadding="8dp"
+                    android:textColor="@color/black"/>
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:id="@+id/TMJTO"
+                    android:background="@drawable/custom_edittext"
+                    android:layout_marginTop="20dp"
+                    android:padding="8dp"
+                    android:hint="Journey To"
+                    android:drawableLeft="@drawable/baseline_person_24"
+                    android:drawablePadding="8dp"
+                    android:textColor="@color/black"/>
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:id="@+id/TMSeatNo"
+                    android:background="@drawable/custom_edittext"
+                    android:layout_marginTop="20dp"
+                    android:padding="8dp"
+                    android:inputType="number"
+                    android:hint="Seat No"
+                    android:drawableLeft="@drawable/baseline_person_24"
+                    android:drawablePadding="8dp"
+                    android:textColor="@color/black"/>
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:id="@+id/TMBusName"
+                    android:background="@drawable/custom_edittext"
+                    android:layout_marginTop="20dp"
+                    android:padding="8dp"
+                    android:hint="Bus Name"
+                    android:drawableLeft="@drawable/baseline_person_24"
+                    android:drawablePadding="8dp"
+                    android:textColor="@color/black"/>
+
+
+                <Button
+                    android:id="@+id/TMsave"
+                    android:layout_width="match_parent"
+                    android:layout_height="60dp"
+                    android:layout_marginTop="30dp"
+                    android:backgroundTint="@color/lavender"
+                    android:text="GO"
+                    android:textSize="18sp"
+                    app:cornerRadius="20dp" />
+                <Button
+                    android:id="@+id/TMBack"
+                    android:layout_width="match_parent"
+                    android:layout_height="60dp"
+                    android:layout_marginTop="20dp"
+                    android:backgroundTint="@color/lavender"
+                    android:text="BACK"
+                    android:textSize="18sp"
+                    app:cornerRadius="20dp" />
+
+            </LinearLayout> </ScrollView>
+
+    </androidx.cardview.widget.CardView>
+
+</LinearLayout>

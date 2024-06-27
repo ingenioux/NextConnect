@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout
+
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:background="@drawable/pagebkg"
+    tools:context=".signup">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="30dp"
+        app:cardCornerRadius="30dp"
+        app:cardElevation="20dp">
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_gravity="center_horizontal"
+                android:padding="24dp"
+                android:background="@drawable/custom_edittext">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Personal Info"
+                    android:textAlignment="center"
+                    android:textColor="@color/lavender"
+                    android:textSize="36sp"
+                    android:textStyle="bold" />
+
+
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:id="@+id/PUName"
+                    android:background="@drawable/custom_edittext"
+                    android:layout_marginTop="20dp"
+                    android:padding="8dp"
+                    android:hint="Name"
+                    android:drawableLeft="@drawable/baseline_person_24"
+                    android:drawablePadding="8dp"
+                    android:textColor="@color/black"/>
+
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:id="@+id/PUPhNumber"
+                    android:background="@drawable/custom_edittext"
+                    android:layout_marginTop="20dp"
+                    android:padding="8dp"
+                    android:hint="Phone Number"
+                    android:drawableLeft="@drawable/baseline_phone_24"
+                    android:drawablePadding="8dp"
+                    android:textColor="@color/black"
+                    android:inputType="phone"/>
+
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:id="@+id/PULanguage"
+                    android:background="@drawable/custom_edittext"
+                    android:layout_marginTop="20dp"
+                    android:padding="8dp"
+                    android:hint="Language"
+                    android:drawableLeft="@drawable/baseline_person_24"
+                    android:drawablePadding="8dp"
+                    android:textColor="@color/black"/>
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:id="@+id/PUAddress"
+                    android:background="@drawable/custom_edittext"
+                    android:layout_marginTop="20dp"
+                    android:padding="8dp"
+                    android:hint="Address"
+                    android:drawableLeft="@drawable/baseline_person_24"
+                    android:drawablePadding="8dp"
+                    android:textColor="@color/black"/>
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:id="@+id/PUbgroop"
+                    android:background="@drawable/custom_edittext"
+                    android:layout_marginTop="20dp"
+                    android:padding="8dp"
+                    android:hint="Blood Group"
+                    android:drawableLeft="@drawable/baseline_person_24"
+                    android:drawablePadding="8dp"
+                    android:textColor="@color/black"/>
+
+                <Button
+                    android:id="@+id/PUsave"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_marginTop="30dp"
+                    android:backgroundTint="@color/lavender"
+                    android:text="SAVE"
+                    android:textSize="18sp"
+                    app:cornerRadius="20dp" />
+                <Button
+                    android:id="@+id/PUBack"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_marginTop="20dp"
+                    android:backgroundTint="@color/lavender"
+                    android:text="Back"
+                    android:textSize="18sp"
+                    app:cornerRadius="20dp" />
+
+            </LinearLayout> </ScrollView>
+
+    </androidx.cardview.widget.CardView>
+
+</LinearLayout>

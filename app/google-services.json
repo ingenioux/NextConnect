@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "30827367440",
+    "project_id": "wavy-test-2",
+    "storage_bucket": "wavy-test-2.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:30827367440:android:90c1c3bbf51f9c5e45ce95",
+        "android_client_info": {
+          "package_name": "com.test2.chatbt"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC-f09LuZ_8d8Oz_cTXTv0qWrMwWOAgdRs"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
